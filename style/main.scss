@@ -1,6 +1,8 @@
+@import './constants/colors';
+
 @import './base/_fonts';
-@import './base/normalize';
-@import './base/reset';
+@import './base/_normalize';
+@import './base/_reset';
 
 * {
   font-family: 'Noto Sans KR', sans-serif;
