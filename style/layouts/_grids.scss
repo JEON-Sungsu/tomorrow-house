@@ -5,9 +5,7 @@
 * gutter ------20px
 * margin ------5px
 * container-size ----- 100% - (5px * 2 )
-*/
 
-/*
  TABLET (>768px)
  * fixture ----- md
 * # of columns ------- 12
@@ -15,9 +13,7 @@
 * margin ------ 30px
 * container-size ----- 100% - (30px * 2 )
 * max-container-size ----- 960px
-*/
 
-/*
  DESKTOP(>1200px)
 * fixture ----- lg
 * # of columns ------- 12
@@ -32,12 +28,15 @@ $sm-columns: 4;
 $sm-margin: 5px;
 $gutter: 20px;
 
-$md-breakpoint: 768px;
 $md-columns: 12;
 $md-margin: 30px;
 $md-max-container: 960px + $md-margin * 2;
+/*
+max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, container 의 마진값(시안상)으로 패딩을 주고 있기 때문에
+실제 컨테이너의 컨텐츠 크기가 900px이 되어버린다. 하여 $md-margin 즉 실제 패딩값을 더해주어 컨테이너의 크기를 늘리나
+실제 컨텐츠 영역의 크기를 960px로 만들어 주는것.
+*/
 
-$lg-breakpoint: 1200px;
 $lg-columns: 12;
 $lg-unit: 75px;
 $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
@@ -57,30 +56,28 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
   }
 
   @for $i from 1 through $sm-columns {
-    .col-sm#{$i} {
+    .col-sm-#{$i} {
       width: percentage($i / $sm-columns);
     }
   }
 
-  @media screen and (min-width: $md-breakpoint) {
-    .container {
-      max-width: $md-max-container;
-      padding: 0 $md-margin;
-    }
+  @include responsive(T) {
+    max-width: $md-max-container;
+    padding: 0 $md-margin;
+
     @for $i from 1 through $md-columns {
-      .col-md#{$i} {
+      .col-md-#{$i} {
         width: percentage($i / $md-columns);
       }
     }
   }
 
-  @media screen and (min-width: $lg-breakpoint) {
-    .container {
-      max-width: $lg-max-container;
-      padding: 0;
-    }
+  @include responsive(D) {
+    max-width: $lg-max-container;
+    padding: 0;
+
     @for $i from 1 through $lg-columns {
-      .col-lg#{$i} {
+      .col-lg-#{$i} {
         width: ($lg-unit + $gutter) * $i;
       }
     }

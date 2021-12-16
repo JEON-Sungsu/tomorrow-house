@@ -1,10 +1,18 @@
 @import './constants/colors';
-@import './layouts/grids';
 @import './constants/typography';
+@import './constants/breakpoints';
+
 @import './base/_fonts';
 @import './base/_normalize';
 @import './base/_reset';
 
-* {
-  font-family: 'Noto Sans KR', sans-serif;
-}
+@import './mixins/_text-style';
+@import './mixins/_responsive';
+@import './mixins/positions';
+@import './mixins/flexbox';
+
+@import './modules/tags';
+@import './modules/avatar';
+@import './modules/star-rating';
+
+@import './layouts/grids';
