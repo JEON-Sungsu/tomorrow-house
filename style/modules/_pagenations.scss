@@ -14,6 +14,7 @@
     @extend %page-item-base;
     border: 1px solid $border;
     width: 26px;
+    font-size: 20px;
 
     &.page-prev {
       margin-right: 24px;
@@ -33,9 +34,9 @@
       opacity: 0.4;
     }
 
-    .ic-chevron {
-      font-size: 20px;
-    }
+    // .ic-chevron {
+    //   font-size: 20px;
+    // }
   }
 
   .page-list {
