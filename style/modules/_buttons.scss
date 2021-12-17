@@ -1,0 +1,79 @@
+%btn-base {
+  @include inline-flexbox;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-weight: 700;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+  }
+}
+
+// NOTE : BTN Styles
+
+.btn-primary {
+  @extend %btn-base;
+  color: $white;
+  background-color: $keycolor;
+  transition: 200ms background-color ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $keycolor-dark;
+  }
+}
+
+.btn-secondary {
+  @extend %btn-base;
+  color: $primary;
+  background-color: $border;
+  transition: 200ms background-color ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $tertiary;
+  }
+}
+
+.btn-outlined {
+  @extend %btn-base;
+  color: $keycolor;
+  background-color: $white;
+  border: 1px solid $keycolor;
+  transition: 200ms background-color ease-in-out;
+
+  &:not(:disabled):hover {
+    background-color: $keycolor-light;
+  }
+}
+
+.btn-ghost {
+  @extend %btn-base;
+  color: $primary;
+  background-color: $white;
+  transition: 200ms color ease-in-out;
+
+  &:not(:disabled):hover {
+    color: $secondary;
+  }
+}
+
+//NOTE : BTN sized
+.btn-32 {
+  @include text-style(14);
+  height: 32px;
+}
+
+.btn-40 {
+  @include text-style(16);
+  height: 40px;
+}
+
+.btn-48 {
+  @include text-style(16);
+  height: 48px;
+}
+
+.btn-55 {
+  @include text-style(18);
+  height: 55px;
+}

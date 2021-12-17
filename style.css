@@ -481,6 +481,130 @@ p {
 .star-rating-24 {
   font-size: 24px; }
 
+.price-16,
+.price-20,
+.price-32, .price-off {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #191a20; }
+  .price-16 .amount, .price-20 .amount, .price-32 .amount, .price-off .amount {
+    font-family: "Tahoma", sans-serif;
+    line-height: 1; }
+  .price-16 .currency, .price-20 .currency, .price-32 .currency, .price-off .currency {
+    font-family: "Noto Sans KR", sans-serif; }
+
+.price-16 .amount,
+.price-20 .amount,
+.price-32 .amount {
+  font-weight: 700;
+  letter-spacing: -0.02em; }
+
+.price-16 .currency,
+.price-20 .currency,
+.price-32 .currency {
+  font-weight: 700; }
+
+.price-16 .amount {
+  font-size: 16px; }
+
+.price-16 .currency {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em; }
+
+.price-20 .amount {
+  font-size: 20px; }
+
+.price-20 .currency {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em; }
+
+.price-32 .amount {
+  font-size: 32px; }
+
+.price-32 .currency {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.02em; }
+
+.price-off {
+  color: #8c8d96; }
+  .price-off .amount {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-decoration: line-through; }
+  .price-off .currency {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em; }
+
+.btn-primary, .btn-secondary, .btn-outlined, .btn-ghost {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 4px;
+  font-weight: 700; }
+  .btn-primary:disabled, .btn-secondary:disabled, .btn-outlined:disabled, .btn-ghost:disabled {
+    cursor: not-allowed;
+    opacity: 0.4; }
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #3da5f5;
+  transition: 200ms background-color ease-in-out; }
+  .btn-primary:not(:disabled):hover {
+    background-color: #3186c4; }
+
+.btn-secondary {
+  color: #3f4150;
+  background-color: #e0e2e7;
+  transition: 200ms background-color ease-in-out; }
+  .btn-secondary:not(:disabled):hover {
+    background-color: #b2b3b9; }
+
+.btn-outlined {
+  color: #3da5f5;
+  background-color: #ffffff;
+  border: 1px solid #3da5f5;
+  transition: 200ms background-color ease-in-out; }
+  .btn-outlined:not(:disabled):hover {
+    background-color: #ecf6fe; }
+
+.btn-ghost {
+  color: #3f4150;
+  background-color: #ffffff;
+  transition: 200ms color ease-in-out; }
+  .btn-ghost:not(:disabled):hover {
+    color: #8c8d96; }
+
+.btn-32 {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  height: 32px; }
+
+.btn-40 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  height: 40px; }
+
+.btn-48 {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  height: 48px; }
+
+.btn-55 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  height: 55px; }
+
 /*
  MOBILE (<768px)
 * fixture ----- sm
