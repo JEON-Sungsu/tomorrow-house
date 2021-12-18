@@ -1,5 +1,5 @@
 %page-item-base {
-  @include inline-flexbox;
+  @include flexbox;
   @include text-style(16, $primary);
   height: 26px;
   font-weight: 700;

@@ -521,9 +521,6 @@ p {
     letter-spacing: -0.01em; }
 
 .btn-primary, .btn-secondary, .btn-outlined, .btn-ghost {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 8px;
   border-radius: 4px;
   font-weight: 700; }
@@ -640,7 +637,7 @@ p {
 
 .pagination .page-control, .pagination .page-item a,
 .pagination .page-item button {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 16px;
