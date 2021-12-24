@@ -352,6 +352,9 @@ ol {
   list-style: none;
   padding-left: 0; }
 
+button {
+  padding: 0; }
+
 .visually-hidden {
   position: absolute !important;
   width: 1px !important;
@@ -849,5 +852,41 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
         width: 1045px; }
       .container .col-lg-12 {
         width: 1140px; } }
+
+.gnb {
+  position: relative;
+  border-bottom: 1px solid #e0e2e7; }
+  .gnb .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .gnb .logo a {
+      display: block; }
+    .gnb .logo img {
+      display: block;
+      width: auto;
+      height: 20px; }
+  .gnb-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; }
+  .gnb-right .button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .gnb-right .gnb-search-button {
+    margin-right: 4px; }
+  .gnb-icon-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: #8c8d96; }
+  .gnb-menu-button {
+    color: #3da5f5; }
 
 /*# sourceMappingURL=style.css.map */
