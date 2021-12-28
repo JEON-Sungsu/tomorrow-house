@@ -765,6 +765,20 @@ i {
     color: #3f4150;
     font-weight: 700; }
 
+.gnb-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  color: #8c8d96;
+  transition: color 200ms ease-in-out; }
+  .gnb-icon-button.is-menu {
+    color: #3da5f5; }
+  .gnb-icon-button:active {
+    color: #3f4150; }
+
 /*
  MOBILE (<768px)
 * fixture ----- sm
@@ -892,18 +906,8 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-  .gnb-right .gnb-search-button {
+  .gnb-right .gnb-icon-button.is-search {
     margin-right: 4px; }
-  .gnb-icon-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
-    color: #8c8d96; }
-  .gnb-menu-button {
-    color: #3da5f5; }
   @media screen and (min-width: 768px) {
     .gnb-left {
       display: flex;
