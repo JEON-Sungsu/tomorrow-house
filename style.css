@@ -426,6 +426,10 @@ p {
 .avatar-24, .avatar-32 {
   display: block;
   overflow: hidden;
+  background-image: url("./assets/images/img-user-default.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%; }
   .avatar-24 img, .avatar-32 img {
     display: block;
@@ -523,6 +527,9 @@ p {
     letter-spacing: -0.01em; }
 
 .btn-primary, .btn-secondary, .btn-outlined, .btn-ghost {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   padding: 0 8px;
   border-radius: 4px;
   font-weight: 700; }
@@ -813,7 +820,11 @@ i {
     border: 3px solid #ffffff;
     border-radius: 50%;
     overflow: hidden;
-    transition: border-color 200ms ease-in-out; }
+    transition: border-color 200ms ease-in-out;
+    background-image: url("./assets/images/img-user-default.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; }
     .my-menu-button:hover, .my-menu-button.is-active {
       border-color: #3da5f5; }
     .my-menu-button img {
@@ -867,6 +878,78 @@ i {
     .my-menu-item a:hover,
     .my-menu-item button:hover {
       background-color: #f7f8fa; }
+
+.drawer-menu.is-active .drawer-menu-button {
+  color: #3da5f5; }
+
+.drawer-menu.is-open.is-community .drawer-menu-content {
+  height: 296px; }
+
+.drawer-menu.is-open.is-store .drawer-menu-content {
+  height: 332px; }
+
+.drawer-menu.is-open.is-expert .drawer-menu-content {
+  height: 80px; }
+
+.drawer-menu.is-open .drawer-menu-button i:last-child {
+  transform: translateY(-50%) rotate(180deg); }
+
+.drawer-menu.is-open .drawer-menu-list {
+  padding-bottom: 8px; }
+
+.drawer-menu-button {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  color: #3f4150;
+  width: 100%;
+  height: 54px;
+  font-weight: 700;
+  position: relative;
+  padding: 0 8px;
+  transition: color 200ms ease-in-out; }
+  .drawer-menu-button i:first-child {
+    position: relative;
+    top: 1px;
+    margin-right: 8px;
+    font-size: 24px;
+    color: #3f4150; }
+  .drawer-menu-button i:last-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    font-size: 16px;
+    color: #3f4150;
+    transition: transform 200ms ease-in-out; }
+
+.drawer-menu-content {
+  height: 0;
+  overflow: hidden;
+  transition: height 200ms ease-in-out; }
+
+.drawer-menu-item.is-active a {
+  color: #3da5f5; }
+
+.drawer-menu-item a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3f4150;
+  font-weight: 700;
+  width: 100%;
+  height: 36px;
+  padding: 0 12px; }
+
+.drawer-menu-item .ic-new {
+  font-size: 16px;
+  color: #f86d7d; }
 
 /*
  MOBILE (<768px)
@@ -1037,5 +1120,51 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
     .gnb-right .input-group {
       width: 264px;
       margin-right: 24px; } }
+
+.sidebar {
+  width: 240px;
+  padding: 32px 20px;
+  background-color: #ffffff; }
+  .sidebar-header {
+    padding: 0 12px; }
+    .sidebar-header .logo a {
+      display: block; }
+    .sidebar-header .logo img {
+      display: block;
+      width: auto;
+      height: 20px; }
+  .sidebar-user, .sidebar-auth {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 88px; }
+  .sidebar-user {
+    padding: 32px 0; }
+    .sidebar-user a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #3f4150;
+      font-weight: 700;
+      width: 100%; }
+    .sidebar-user .avatar-24 {
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-right: 8px; }
+    .sidebar-user .username {
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+  .sidebar-auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0; }
+    .sidebar-auth a {
+      width: 84px; }
 
 /*# sourceMappingURL=style.css.map */
