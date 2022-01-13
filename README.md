@@ -68,3 +68,10 @@
           <a class="btn-primary btn-40" href="/">회원가입</a>
         </div>
 ```
+
+- DRAWER-MENU(MOBILE)
+
+---
+
+1. 메뉴 햄버거 눌리면 사이드바 등장 및 제거 JS 추가해야함
+2. 각 리스트 chevron 클릭시 열고 닫는 JS 추가해야됨.
