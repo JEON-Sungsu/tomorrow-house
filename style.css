@@ -838,7 +838,10 @@ i {
     transform: translateX(-50%);
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
-    top: 52px; }
+    top: 52px;
+    display: none; }
+    .my-menu-content.is-active {
+      display: block; }
     .my-menu-content::before, .my-menu-content::after {
       position: absolute;
       left: 50%;
@@ -1131,7 +1134,11 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
   overscroll-behavior: contain;
   top: 0;
   left: 0;
-  z-index: 20; }
+  transform: translate3d(-240px, 0, 0);
+  z-index: 20;
+  transition: transform 300ms ease-in-out; }
+  .sidebar.is-active {
+    transform: translate3d(0, 0, 0); }
   .sidebar-header {
     padding: 0 12px; }
     .sidebar-header .logo a {
@@ -1202,6 +1209,12 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
   z-index: 10;
   width: 100%;
   height: 100vh;
-  background-color: rgba(63, 65, 80, 0.5); }
+  background-color: rgba(63, 65, 80, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out; }
+  .overlay.is-active {
+    opacity: 1;
+    visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */

@@ -33,7 +33,11 @@
     border-radius: 4px;
     box-shadow: $dropdown-shadow;
     top: $button-size + $tooltip-szie + 8px;
+    display: none;
 
+    &.is-active {
+      display: block;
+    }
     &::before,
     &::after {
       @include position-center-x;
