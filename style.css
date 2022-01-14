@@ -1168,6 +1168,9 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
               color: #3da5f5; }
             .gnb-right .button-group .gnb-auth a:first-child {
               margin-right: 12px; }
+      .gnb-right .btn-primary .ic-chevron {
+        font-size: 20px;
+        padding-left: 4px; }
     .gnb-wrapper {
       height: 80px; }
     .gnb .logo {
