@@ -745,7 +745,8 @@ i {
   content: '\e90b'; }
 
 .ic-new:before {
-  content: '\e90c'; }
+  content: '\e90c';
+  color: #f86d7d; }
 
 .ic-search:before {
   content: '\e90d'; }
@@ -775,7 +776,8 @@ i {
     color: #3f4150;
     font-weight: 700;
     display: block;
-    padding: 8px; }
+    padding: 8px;
+    white-space: nowrap; }
 
 .gnb-icon-button {
   display: flex;
@@ -958,8 +960,7 @@ i {
   padding: 0 12px; }
 
 .drawer-menu-item .ic-new {
-  font-size: 16px;
-  color: #f86d7d; }
+  font-size: 16px; }
 
 .search-history-header {
   display: flex;
@@ -1323,5 +1324,51 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
       flex-shrink: 0;
       width: 56px;
       margin-left: 8px; }
+
+.lnb {
+  overflow-x: auto; }
+  .lnb::-webkit-scrollbar {
+    display: none; }
+  .lnb-list {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    margin-left: -15px;
+    height: 40px;
+    padding: 0 7px;
+    border-bottom: 1px solid #e0e2e7; }
+  .lnb-item.is-active a {
+    border-bottom-color: #3da5f5;
+    color: #3da5f5; }
+  .lnb-item a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #191a20;
+    height: 40px;
+    font-weight: 700;
+    padding: 0px 8px;
+    border-bottom: 2px solid transparent; }
+  .lnb-item:hover a {
+    color: #3da5f5; }
+  @media screen and (min-width: 768px) {
+    .lnb {
+      overflow-x: visible;
+      height: 50px;
+      border-bottom: 1px solid #e0e2e7; }
+      .lnb-list {
+        height: auto;
+        padding: 0;
+        margin-left: 0;
+        border-bottom: 0; }
+      .lnb-item a {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        height: 50px; } }
 
 /*# sourceMappingURL=style.css.map */
