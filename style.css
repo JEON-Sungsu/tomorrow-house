@@ -1414,8 +1414,6 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
     .global-footer-detail-item dt::after {
       content: ':';
       margin: 0 2px; }
-  .global-footer address {
-    font-style: normal; }
   @media screen and (min-width: 1200px) {
     .global-footer-title {
       font-size: 14px;
