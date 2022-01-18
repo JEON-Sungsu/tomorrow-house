@@ -180,7 +180,7 @@
     <main class="product-show">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-lg-12">
+          <div class="col-sm-4">
             <div class="breadcrumble">
               <a href="/">가전</a>
               <i class="ic-chevron"></i>
@@ -194,56 +194,66 @@
         </div>
       </div>
 
-      <div role="region">
-        <ul>
-          <li role="tabpanel" aria-labelledby="product-carousel-tab-1">
-            <figure>
-              <img src="./assets/images/img-product-01.jpg" alt="">
-              <figcaption>보야르 전기히터 상세 이미지 1</figcaption>
-            </figure>
-          </li>
-          <li role="tabpanel" aria-labelledby="product-carousel-tab-2">
-            <figure>
-              <img src="./assets/images/img-product-02.jpg" alt="">
-              <figcaption>보야르 전기히터 상세 이미지 2</figcaption>
-            </figure>
-          </li>
-          <li role="tabpanel" aria-labelledby="product-carousel-tab-3">
-            <figure>
-              <img src="./assets/images/img-product-03.jpg" alt="">
-              <figcaption>보야르 전기히터 상세 이미지 3</figcaption>
-            </figure>
-          </li>
-          <li role="tabpanel" aria-labelledby="product-carousel-tab-4">
-            <figure>
-              <img src="./assets/images/img-product-04.jpg" alt="">
-              <figcaption>보야르 전기히터 상세 이미지 4</figcaption>
-            </figure>
-          </li>
-        </ul>
-  
-        <ol role="tablist">
-          <li role="tab" id="product-carousel-tab-1">
-            <button type="button">
-              <img src="./assets/images/img-product-01.jpg" alt="1번 이미지">
-            </button>
-          </li>
-          <li role="tab" id="product-carousel-tab-2">
-            <button type="button">
-              <img src="./assets/images/img-product-02.jpg" alt="2번 이미지">
-            </button>
-          </li>
-          <li role="tab" id="product-carousel-tab-3">
-            <button type="button">
-              <img src="./assets/images/img-product-03.jpg" alt="3번 이미지">
-            </button>
-          </li>
-          <li role="tab" id="product-carousel-tab-4">
-            <button type="button">
-              <img src="./assets/images/img-product-04.jpg" alt="4번 이미지">
-            </button>
-          </li>
-        </ol>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 col-md-6 col-lg-7">
+            <div class="product-carousel" role="region">
+              <div class="product-carousel-slider">
+                <ul class="slider-list">
+                  <li class="slider-list-item"role="tabpanel" aria-labelledby="product-carousel-tab-1">
+                    <figure>
+                      <img src="./assets/images/img-product-01.jpg" alt="">
+                      <figcaption class="visually-hidden">보야르 전기히터 상세 이미지 1</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-list-item"role="tabpanel" aria-labelledby="product-carousel-tab-2">
+                    <figure>
+                      <img src="./assets/images/img-product-02.jpg" alt="">
+                      <figcaption class="visually-hidden">보야르 전기히터 상세 이미지 2</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-list-item"role="tabpanel" aria-labelledby="product-carousel-tab-3">
+                    <figure>
+                      <img src="./assets/images/img-product-03.jpg" alt="">
+                      <figcaption class="visually-hidden">보야르 전기히터 상세 이미지 3</figcaption>
+                    </figure>
+                  </li>
+                  <li class="slider-list-item"role="tabpanel" aria-labelledby="product-carousel-tab-4">
+                    <figure>
+                      <img src="./assets/images/img-product-04.jpg" alt="">
+                      <figcaption class="visually-hidden">보야르 전기히터 상세 이미지 4</figcaption>
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+        
+              <div class="product-carousel-thumbnail">
+                <ol class="thumbnail-list"role="tablist">
+                  <li class="tumbnail-item"role="tab" id="product-carousel-tab-1">
+                    <button type="button">
+                      <img src="./assets/images/img-product-01.jpg" alt="1번 이미지">
+                    </button>
+                  </li>
+                  <li class="tumbnail-item"role="tab" id="product-carousel-tab-2">
+                    <button type="button">
+                      <img src="./assets/images/img-product-02.jpg" alt="2번 이미지">
+                    </button>
+                  </li>
+                  <li class="tumbnail-item"role="tab" id="product-carousel-tab-3">
+                    <button type="button">
+                      <img src="./assets/images/img-product-03.jpg" alt="3번 이미지">
+                    </button>
+                  </li>
+                  <li class="tumbnail-item"role="tab" id="product-carousel-tab-4">
+                    <button type="button">
+                      <img src="./assets/images/img-product-04.jpg" alt="4번 이미지">
+                    </button>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
@@ -251,7 +261,7 @@
     <footer class="global-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-lg-12">
+          <div class="col-sm-4">
             <h3 class="global-footer-title">
               고객센터
               <i class="ic-chevron" aria-hidden></i>
