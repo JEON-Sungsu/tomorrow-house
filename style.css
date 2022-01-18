@@ -1347,7 +1347,7 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
     height: 40px;
     padding: 0 7px;
     border-bottom: 1px solid #e0e2e7; }
-  .lnb-item.is-active a {
+  ㄹ .lnb-item.is-active a {
     border-bottom-color: #3da5f5;
     color: #3da5f5; }
   .lnb-item a {
