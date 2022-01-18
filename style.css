@@ -1123,6 +1123,7 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
         width: 1140px; } }
 
 .gnb {
+  background-color: #ffffff;
   position: relative;
   border-bottom: 1px solid #e0e2e7; }
   .gnb .logo {
@@ -1140,7 +1141,7 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px; }
+    height: 49px; }
   .gnb-right .button-group {
     display: flex;
     justify-content: flex-end;
@@ -1148,6 +1149,8 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
   .gnb-right .gnb-icon-button.is-search {
     margin-right: 4px; }
   @media screen and (min-width: 768px) {
+    .gnb-wrapper {
+      height: 79px; }
     .gnb-left {
       display: flex;
       justify-content: flex-start;
@@ -1329,7 +1332,8 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
       margin-left: 8px; }
 
 .lnb {
-  overflow-x: auto; }
+  overflow-x: auto;
+  background-color: #ffffff; }
   .lnb::-webkit-scrollbar {
     display: none; }
   .lnb-list {
@@ -1373,6 +1377,24 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
         line-height: 24px;
         letter-spacing: -0.01em;
         height: 50px; } }
+
+.global-header {
+  width: 100%;
+  height: 90px; }
+  .global-header .gnb,
+  .global-header .lnb {
+    position: fixed;
+    left: 0;
+    width: 100%; }
+  .global-header .gnb {
+    top: 0; }
+  .global-header .lnb {
+    top: 50px; }
+  @media screen and (min-width: 768px) {
+    .global-header {
+      height: 130px; }
+      .global-header .lnb {
+        top: 80px; } }
 
 .global-footer {
   padding-top: 32px;
