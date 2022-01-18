@@ -1018,6 +1018,41 @@ i {
     .search-history-item .delete-button:hover {
       color: #3f4150; }
 
+.breadcrumble {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 0; }
+  .breadcrumble a {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #8c8d96; }
+    .breadcrumble a:active {
+      opacity: 0.4; }
+  .breadcrumble .ic-chevron {
+    font-size: 12px;
+    margin: 0 2px;
+    color: #b2b3b9;
+    display: inline-block;
+    transform: rotate(-90deg); }
+  @media screen and (min-width: 768px) {
+    .breadcrumble {
+      padding: 16px 0; }
+      .breadcrumble a {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em; }
+      .breadcrumble .ic-chevron {
+        margin: 0 4px; } }
+  @media screen and (min-width: 1200px) {
+    .breadcrumble {
+      padding-top: 24px;
+      padding-bottom: 40px; }
+      .breadcrumble a:hover {
+        opacity: 0.4; } }
+
 /*
  MOBILE (<768px)
 * fixture ----- sm
