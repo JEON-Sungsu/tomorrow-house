@@ -2,6 +2,7 @@
   background-color: $white;
   position: relative;
   border-bottom: 1px solid $border;
+  z-index: $gnb-level;
   .logo {
     @include position-center;
 

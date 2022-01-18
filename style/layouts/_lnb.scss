@@ -4,6 +4,7 @@
 
   overflow-x: auto;
   background-color: $white;
+  z-index: $lnb-level;
 
   @include no-scrollbar;
 
