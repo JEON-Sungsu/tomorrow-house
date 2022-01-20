@@ -45,4 +45,49 @@
     width: 100%;
     height: auto;
   }
+
+  @include responsive(T) {
+    padding-right: 30px;
+
+    &-slider {
+      margin: 0;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    &-thumbnail {
+      position: static;
+      transform: none;
+    }
+
+    .thumbnail-list {
+      @include flexbox(start);
+    }
+
+    .thumbnail-item {
+      margin: 0 8px 0 0;
+
+      &.tns-nav-active {
+        button {
+          transform: none;
+          border: 2px solid $keycolor;
+        }
+      }
+
+      button {
+        @include flexbox;
+        width: 56px;
+        height: 56px;
+        opacity: 1;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+
+      img {
+        display: block;
+        width: 56px;
+      }
+    }
+  }
 }

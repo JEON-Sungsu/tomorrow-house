@@ -1087,6 +1087,38 @@ i {
     display: block;
     width: 100%;
     height: auto; }
+  @media screen and (min-width: 768px) {
+    .product-carousel {
+      padding-right: 30px; }
+      .product-carousel-slider {
+        margin: 0;
+        margin-bottom: 8px;
+        border-radius: 4px;
+        overflow: hidden; }
+      .product-carousel-thumbnail {
+        position: static;
+        transform: none; }
+      .product-carousel .thumbnail-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+      .product-carousel .thumbnail-item {
+        margin: 0 8px 0 0; }
+        .product-carousel .thumbnail-item.tns-nav-active button {
+          transform: none;
+          border: 2px solid #3da5f5; }
+        .product-carousel .thumbnail-item button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 56px;
+          height: 56px;
+          opacity: 1;
+          border-radius: 4px;
+          overflow: hidden; }
+        .product-carousel .thumbnail-item img {
+          display: block;
+          width: 56px; } }
 
 /*
  MOBILE (<768px)
