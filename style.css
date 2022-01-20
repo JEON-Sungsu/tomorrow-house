@@ -1053,13 +1053,40 @@ i {
       .breadcrumble a:hover {
         opacity: 0.4; } }
 
-.product-carousel-thumbnail {
-  display: none; }
-
-.product-carousel img {
-  display: block;
-  width: 100%;
-  height: auto; }
+.product-carousel {
+  position: relative; }
+  .product-carousel-slider {
+    margin: 0 -15px; }
+  .product-carousel-thumbnail {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 16px; }
+    .product-carousel-thumbnail .thumbnail-list {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .product-carousel-thumbnail .thumbnail-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 4px; }
+      .product-carousel-thumbnail .thumbnail-item.tns-nav-active button {
+        transform: scale(1.33333);
+        opacity: 1; }
+      .product-carousel-thumbnail .thumbnail-item button {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        opacity: 0.7;
+        transition: transform 200ms ease-in-out; }
+      .product-carousel-thumbnail .thumbnail-item img {
+        display: none; }
+  .product-carousel img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 /*
  MOBILE (<768px)
