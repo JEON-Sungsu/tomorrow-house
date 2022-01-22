@@ -1344,6 +1344,8 @@ i {
     height: 20px;
     font-size: 20px;
     color: #8c8d96; }
+    .checkout-card .delete-button:hover, .checkout-card .delete-button:active {
+      opacity: 0.3; }
   .checkout-card .checkout-footer {
     display: flex;
     justify-content: space-between;
@@ -1351,6 +1353,10 @@ i {
   .checkout-card .checkout-select {
     position: relative;
     display: inline-block; }
+    .checkout-card .checkout-select:hover select {
+      border-color: #b2b3b9; }
+    .checkout-card .checkout-select:hover i {
+      color: #8c8d96; }
     .checkout-card .checkout-select select {
       font-size: 14px;
       line-height: 24px;
@@ -1362,7 +1368,8 @@ i {
       padding: 0 8px;
       border: 1px solid #e0e2e7;
       background-color: #ffffff;
-      appearance: none; }
+      appearance: none;
+      transition: border-color 100ms ease-in-out; }
     .checkout-card .checkout-select i {
       position: absolute;
       top: 50%;
@@ -1370,7 +1377,8 @@ i {
       right: 2px;
       font-size: 20px;
       color: #b2b3b9;
-      pointer-events: none; }
+      pointer-events: none;
+      transition: border-color 100ms ease-in-out; }
   @media screen and (min-width: 1200px) {
     .checkout-card .checkout-title {
       font-size: 16px;
