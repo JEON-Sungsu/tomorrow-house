@@ -1319,6 +1319,64 @@ i {
       .order-form .button-group button:last-child {
         margin-right: 0; }
 
+.checkout-card {
+  padding: 8px 10px 8px 12px;
+  background-color: #f7f8fa;
+  border-radius: 4px;
+  position: relative; }
+  .checkout-card .checkout-title {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    padding-right: 26px;
+    font-weight: 400; }
+  .checkout-card .checkout-header {
+    margin-bottom: 8px; }
+  .checkout-card .delete-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #8c8d96; }
+  .checkout-card .checkout-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .checkout-card .checkout-select {
+    position: relative;
+    display: inline-block; }
+    .checkout-card .checkout-select select {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #3f4150;
+      width: 72px;
+      height: 24px;
+      line-height: 1;
+      padding: 0 8px;
+      border: 1px solid #e0e2e7;
+      background-color: #ffffff;
+      appearance: none; }
+    .checkout-card .checkout-select i {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2px;
+      font-size: 20px;
+      color: #b2b3b9;
+      pointer-events: none; }
+  @media screen and (min-width: 1200px) {
+    .checkout-card .checkout-title {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em; } }
+
 /*
  MOBILE (<768px)
 * fixture ----- sm
