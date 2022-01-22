@@ -1298,6 +1298,12 @@ i {
       margin-bottom: 8px; }
       .order-form .order-inputs .select-group:last-child {
         margin-bottom: 0; }
+  .order-form .order-checkout {
+    margin-bottom: 20px; }
+    .order-form .order-checkout .checkout-item {
+      margin-bottom: 8px; }
+      .order-form .order-checkout .checkout-item:last-child {
+        margin-bottom: 0; }
   .order-form .order-summary {
     display: flex;
     justify-content: space-between;
@@ -1369,7 +1375,7 @@ i {
       border: 1px solid #e0e2e7;
       background-color: #ffffff;
       appearance: none;
-      transition: border-color 100ms ease-in-out; }
+      transition: border-color 200ms ease-in-out; }
     .checkout-card .checkout-select i {
       position: absolute;
       top: 50%;
@@ -1378,7 +1384,7 @@ i {
       font-size: 20px;
       color: #b2b3b9;
       pointer-events: none;
-      transition: border-color 100ms ease-in-out; }
+      transition: border-color 200ms ease-in-out; }
   @media screen and (min-width: 1200px) {
     .checkout-card .checkout-title {
       font-size: 16px;

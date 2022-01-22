@@ -57,7 +57,7 @@
       border: 1px solid $border;
       background-color: $white;
       appearance: none;
-      transition: border-color 100ms ease-in-out;
+      transition: border-color 200ms ease-in-out;
     }
 
     i {
@@ -66,7 +66,7 @@
       font-size: 20px;
       color: $tertiary;
       pointer-events: none;
-      transition: border-color 100ms ease-in-out;
+      transition: border-color 200ms ease-in-out;
     }
   }
 
