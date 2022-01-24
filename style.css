@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*
+max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, container 의 마진값(시안상)으로 패딩을 주고 있기 때문에
+실제 컨테이너의 컨텐츠 크기가 900px이 되어버린다. 하여 $md-margin 즉 실제 패딩값을 더해주어 컨테이너의 크기를 늘리나
+실제 컨텐츠 영역의 크기를 960px로 만들어 주는것.
+*/
 @font-face {
   font-family: 'tomorrow';
   src: url("./assets/fonts/tomorrow.eot");
@@ -1532,11 +1537,6 @@ i {
 * margin ------ auto
 * container-size ----- 1140px
 * max-container-size ----- 1140px
-*/
-/*
-max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, container 의 마진값(시안상)으로 패딩을 주고 있기 때문에
-실제 컨테이너의 컨텐츠 크기가 900px이 되어버린다. 하여 $md-margin 즉 실제 패딩값을 더해주어 컨테이너의 크기를 늘리나
-실제 컨텐츠 영역의 크기를 960px로 만들어 주는것.
 */
 .container {
   width: 100%;

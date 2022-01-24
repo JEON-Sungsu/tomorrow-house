@@ -19,7 +19,7 @@
   .icon-button {
     @include position-center-y;
     right: 0;
-    right: -15px;
+    right: -#{$grid-margin};
     &:active {
       opacity: 0.4;
     }
@@ -34,8 +34,8 @@
   .icon-button {
     @include flexbox();
 
-    width: 22px + (15px * 2);
-    height: 22px + (15px * 2);
+    width: 22px + ($grid-margin * 2);
+    height: 22px + ($grid-margin * 2);
     font-size: 22px;
     color: $secondary;
 
