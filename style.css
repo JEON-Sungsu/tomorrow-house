@@ -1453,6 +1453,35 @@ i {
       line-height: 24px;
       letter-spacing: -0.02em; } }
 
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; }
+  .product-table tr {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    color: #3f4150;
+    text-align: left;
+    border-bottom: 1px solid #e0e2e7;
+    vertical-align: top; }
+  .product-table th,
+  .product-table td {
+    padding: 12px; }
+  .product-table th {
+    width: 124px;
+    font-weight: 400;
+    color: #8c8d96; }
+  .product-table td {
+    padding-left: 0; }
+  @media screen and (min-width: 768px) {
+    .product-table tr {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em; }
+    .product-table th {
+      width: 164px; } }
+
 /*
  MOBILE (<768px)
 * fixture ----- sm
