@@ -1392,6 +1392,22 @@ i {
       line-height: 24px;
       letter-spacing: -0.02em; } }
 
+.product-section {
+  padding-bottom: 20px; }
+  .product-section-divider {
+    margin: 0 -15px;
+    height: 8px;
+    background-color: #e0e2e7; }
+  @media screen and (min-width: 768px) {
+    .product-section {
+      width: 100%;
+      max-width: 692px;
+      padding-bottom: 80px;
+      margin: 0 auto; } }
+  @media screen and (min-width: 1200px) {
+    .product-section {
+      margin: 0; } }
+
 .product-section-header {
   display: flex;
   justify-content: flex-start;
@@ -1482,6 +1498,15 @@ i {
       letter-spacing: -0.01em; }
     .product-table th {
       width: 164px; } }
+
+.product-spec {
+  padding-top: 20px; }
+  .product-spec .button-wrapper {
+    display: none; }
+  .product-spec figure img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 /*
  MOBILE (<768px)
@@ -1926,7 +1951,8 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
   width: 100%;
   height: 40px;
   border-bottom: 1px solid #e0e2e7;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  z-index: 30; }
   .product-tab-list {
     display: flex;
     justify-content: center;
