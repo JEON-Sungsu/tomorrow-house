@@ -1866,7 +1866,7 @@ max-width에 margin 값을 더해주는 이유는, 우리가 아래에서, conta
 .global-footer {
   padding-top: 32px;
   padding-bottom: 40px;
-  color: #f7f8fa; }
+  background-color: #f7f8fa; }
   .global-footer-title {
     font-size: 13px;
     line-height: 20px;
