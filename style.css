@@ -1747,6 +1747,20 @@ i {
   .product-review .review-item:last-child {
     border-bottom: 0; }
 
+.product-review .review-empty {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #8c8d96;
+  text-align: center;
+  padding: 36px 0; }
+  .product-review .review-empty strong {
+    color: #3da5f5; }
+
+@media screen and (min-width: 768px) {
+  .product-review .review-empty {
+    padding: 16px 0; } }
+
 /*
  MOBILE (<768px)
 * fixture ----- sm
