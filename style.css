@@ -718,7 +718,8 @@ p {
     .pagination .page-item a,
     .pagination .page-item button {
       min-width: 26px;
-      padding: 0 4px; }
+      padding: 0 4px;
+      padding-bottom: 2px; }
       .pagination .page-item a:hover,
       .pagination .page-item button:hover {
         color: #3da5f5; }
@@ -1740,6 +1741,11 @@ i {
         width: 112px;
         height: 112px;
         margin-bottom: 16px; } }
+
+.product-review .review-item {
+  border-bottom: 1px solid #e0e2e7; }
+  .product-review .review-item:last-child {
+    border-bottom: 0; }
 
 /*
  MOBILE (<768px)
