@@ -32,6 +32,7 @@
         border-radius: (5px / 2);
         margin-right: 4px;
         background-color: $border;
+        overflow: hidden;
 
         .active-bar {
           width: 0;
@@ -39,6 +40,8 @@
           background-color: $keycolor;
           border-radius: (5px / 2);
           overflow: hidden;
+          animation-name: slide-active-bar;
+          animation-duration: 1000ms;
         }
       }
 
@@ -61,5 +64,15 @@
         }
       }
     }
+  }
+}
+
+@keyframes slide-active-bar {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
   }
 }
