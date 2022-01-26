@@ -34,7 +34,7 @@
 		"style/components/_drawer-menu.scss",
 		"style/components/_search-history.scss",
 		"style/components/_breadcrumble.scss",
-		"style/components/_produc-carousel.scss",
+		"style/components/_product-carousel.scss",
 		"style/components/_product-info.scss",
 		"style/components/_order-form.scss",
 		"style/components/_checkout-card.scss",
