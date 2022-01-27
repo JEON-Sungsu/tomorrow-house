@@ -1797,9 +1797,23 @@ i {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.01em; }
-    .inquiry-card-body .question-content {
+    .inquiry-card-body .inquiry-content {
       position: relative;
       padding-left: 20px; }
+      .inquiry-card-body .inquiry-content:first-child:not(:last-child) {
+        margin-bottom: 12px; }
+    .inquiry-card-body .seller {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 4px; }
+      .inquiry-card-body .seller strong {
+        margin-right: 4px; }
+      .inquiry-card-body .seller time {
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.005em;
+        color: #b2b3b9; }
     .inquiry-card-body span {
       position: absolute;
       top: 0;
@@ -1822,8 +1836,16 @@ i {
       font-size: 14px;
       line-height: 24px;
       letter-spacing: -0.01em; }
-      .inquiry-card-body .question-content {
+      .inquiry-card-body .inquiry-content {
         padding-left: 24px; }
+        .inquiry-card-body .inquiry-content:first-child:not(:last-child) {
+          margin-bottom: 16px; }
+      .inquiry-card-body .seller {
+        margin-bottom: 8px; }
+        .inquiry-card-body .seller strong {
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: -0.02em; }
       .inquiry-card-body span {
         font-size: 16px;
         line-height: 24px;
