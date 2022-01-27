@@ -1851,6 +1851,18 @@ i {
         line-height: 24px;
         letter-spacing: -0.02em; } }
 
+.product-inquiry .inquiry-empty {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #8c8d96;
+  padding: 48px 0;
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .product-inquiry .inquiry-empty {
+    padding: 20px 0; } }
+
 @media screen and (max-width: 767px) {
   .product-inquiry {
     padding-bottom: 0; }
