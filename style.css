@@ -402,11 +402,6 @@ address {
   .lg-hidden {
     display: none !important; } }
 
-p {
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: -0.005em; }
-
 .tag-red, .tag-green, .tag-gray {
   display: inline-flex;
   justify-content: center;
@@ -1769,6 +1764,63 @@ i {
 @media screen and (min-width: 768px) {
   .product-review .review-empty {
     padding: 16px 0; } }
+
+.inquiry-card {
+  padding-bottom: 40px; }
+  .inquiry-card-header {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.005em;
+    margin-bottom: 8px; }
+    .inquiry-card-header .detail,
+    .inquiry-card-header .misc {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .inquiry-card-header .detail dd::after,
+      .inquiry-card-header .detail strong::after,
+      .inquiry-card-header .misc dd::after,
+      .inquiry-card-header .misc strong::after {
+        content: '|';
+        margin: 0 4px; }
+      .inquiry-card-header .detail dd:last-child::after,
+      .inquiry-card-header .misc dd:last-child::after {
+        content: none; }
+    .inquiry-card-header .detail {
+      color: #3f4150;
+      margin-bottom: 8px; }
+    .inquiry-card-header .misc {
+      color: #b2b3b9; }
+      .inquiry-card-header .misc strong {
+        font-weight: 400; }
+  .inquiry-card-body {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em; }
+    .inquiry-card-body .question-content {
+      position: relative;
+      padding-left: 20px; }
+    .inquiry-card-body span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #3da5f5;
+      font-weight: 700; }
+    .inquiry-card-body p {
+      color: #3f4150; }
+  @media screen and (min-width: 768px) {
+    .inquiry-card-header {
+      margin-bottom: 20px; }
+    .inquiry-card-body {
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.01em; }
+      .inquiry-card-body .question-content {
+        padding-left: 24px; }
+      .inquiry-card-body span {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.02em; } }
 
 /*
  MOBILE (<768px)
