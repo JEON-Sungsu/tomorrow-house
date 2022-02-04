@@ -31,6 +31,10 @@
 
     .avatar-32 {
       margin-right: 8px;
+
+      &:active {
+        opacity: 0.4;
+      }
     }
 
     .avatar-32,
@@ -48,6 +52,19 @@
       flex-grow: 1;
       padding-right: 8px;
       @include truncate();
+
+      &:active {
+        color: $keycolor;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .avatar-32,
+    .username {
+      &:hover {
+        opacity: 0.4;
+      }
     }
   }
 }
