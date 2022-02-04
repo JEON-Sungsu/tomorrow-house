@@ -1,5 +1,6 @@
 .user-gallery {
   margin: 0 -#{$grid-margin};
+  overflow: hidden;
 
   &-slider {
     margin-bottom: 4px;
@@ -8,6 +9,11 @@
   .thumbnail-list {
     @include flexbox(start);
     padding-left: 2px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 
   .thumbnail-item {
@@ -32,8 +38,8 @@
 
       img {
         display: block;
-        width: 100%;
-        height: 100%;
+        width: 64px;
+        height: 64px;
         object-fit: cover;
       }
     }
@@ -44,6 +50,7 @@
 
     &-slider {
       margin-bottom: 6px;
+      position: relative;
     }
 
     .thumbnail-list {
@@ -54,6 +61,52 @@
       button {
         width: 75px;
         height: 75px;
+      }
+
+      img {
+        width: 75px;
+        height: 75px;
+      }
+    }
+
+    &-controls {
+      @include flexbox(between);
+      @include position-center;
+      padding: 0 52px;
+      width: 100%;
+
+      .control-button {
+        @include flexbox;
+        width: 40px;
+        height: 40px;
+        background-color: $white;
+        border-radius: 50%;
+        color: $primary;
+        font-size: 28px;
+        transition: background-color 200ms ease-in-out, color 200ms ease-in-out;
+
+        &.is-prev {
+          i {
+            transform: rotate(90deg);
+            margin-left: -2px;
+          }
+        }
+
+        &.is-next {
+          i {
+            transform: rotate(-90deg);
+            margin-left: 2px;
+          }
+        }
+
+        &:hover {
+          background-color: $keycolor;
+          color: $white;
+        }
+
+        &[disabled] {
+          visibility: hidden;
+        }
       }
     }
   }

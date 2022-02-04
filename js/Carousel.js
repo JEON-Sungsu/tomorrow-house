@@ -14,7 +14,9 @@ const slider = tns({
 
 const userGallery = tns({
   container: '.user-gallery .slider-list',
+  navContainer: '.user-gallery-thumbnail .thumbnail-list',
   controls: false,
+  controlsContainer: '.user-gallery-controls', //컨트롤 이동버튼 커스터마이징 컨테이너 지정
   gutter: 4, //슬라이드별 간격 px 임
   edgePadding: 16, //다음 슬라이드를 양옆에 보여지게 해주는 간격 px 임
   loop: false, //슬라이드 무한반복 이걸하면 edgePadding 을 주더라도 제일 첫 슬라이드에서 양옆이 아니라 우측으로만 드러난다.
