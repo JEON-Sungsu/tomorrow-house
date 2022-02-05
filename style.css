@@ -2719,8 +2719,12 @@ i {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  position: sticky;
+  top: 184px;
   flex-direction: column;
-  height: 700px; }
+  padding: 24px 0;
+  min-height: calc(100vh - 370px);
+  max-height: calc(100vh - 184px); }
   .floating-order-form > * {
     width: 100%; }
   .floating-order-form .order-input,
