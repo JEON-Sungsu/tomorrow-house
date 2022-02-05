@@ -2649,7 +2649,8 @@ i {
   width: 100%;
   padding: 0 4px;
   height: 56px;
-  z-index: 40; }
+  z-index: 40;
+  display: none; }
   .order-cta .btn-ghost {
     flex-direction: column;
     flex-grow: 0;
