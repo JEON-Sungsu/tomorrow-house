@@ -8,6 +8,11 @@
   width: calc(100% - #{$grid-margin * 2});
   max-width: 360px;
   text-align: center;
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
 
   .cart-title {
     @include text-style(16, $dark);
@@ -28,7 +33,7 @@
     }
   }
 
-  @include responsive(T) {
+  @include responsive(D) {
     padding-right: 32px;
     padding-left: 32px;
 

@@ -2764,7 +2764,10 @@ i {
   overflow: hidden;
   width: calc(100% - 30px);
   max-width: 360px;
-  text-align: center; }
+  text-align: center;
+  display: none; }
+  .cart-modal.is-active {
+    display: block; }
   .cart-modal .cart-title {
     font-size: 16px;
     line-height: 24px;
@@ -2779,7 +2782,7 @@ i {
       width: 100%; }
     .cart-modal .button-group a {
       margin-bottom: 8px; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .cart-modal {
       padding-right: 32px;
       padding-left: 32px; }
