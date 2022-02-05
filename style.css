@@ -2250,7 +2250,7 @@ i {
   background-color: #ffffff;
   position: relative;
   border-bottom: 1px solid #e0e2e7;
-  z-index: 50; }
+  z-index: 60; }
   .gnb .logo {
     position: absolute;
     top: 50%;
@@ -2459,7 +2459,7 @@ i {
 .lnb {
   overflow-x: auto;
   background-color: #ffffff;
-  z-index: 40; }
+  z-index: 50; }
   .lnb::-webkit-scrollbar {
     display: none; }
   .lnb-list {
@@ -2525,6 +2525,7 @@ i {
 .global-footer {
   padding-top: 32px;
   padding-bottom: 40px;
+  margin-bottom: 56px;
   background-color: #f7f8fa; }
   .global-footer-title {
     font-size: 13px;
@@ -2563,21 +2564,23 @@ i {
       content: ':';
       margin: 0 2px; }
   @media screen and (min-width: 1200px) {
-    .global-footer-title {
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: -0.01em; }
-    .global-footer-detail-list {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-    .global-footer-contact:hover {
-      opacity: 0.5; }
-    .global-footer-detail-item a:hover {
-      text-decoration: underline; }
-    .global-footer-detail-item:not(:last-child):after {
-      margin: 0 8px;
-      content: '|'; } }
+    .global-footer {
+      margin-bottom: 0; }
+      .global-footer-title {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em; }
+      .global-footer-detail-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+      .global-footer-contact:hover {
+        opacity: 0.5; }
+      .global-footer-detail-item a:hover {
+        text-decoration: underline; }
+      .global-footer-detail-item:not(:last-child):after {
+        margin: 0 8px;
+        content: '|'; } }
 
 .product-tab {
   position: sticky;
@@ -2634,5 +2637,34 @@ i {
   @media screen and (min-width: 1200px) {
     .product-tab-item button:hover {
       color: #3da5f5; } }
+
+.order-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 4px;
+  height: 56px;
+  z-index: 40; }
+  .order-cta .btn-ghost {
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 72px;
+    margin-right: 4px; }
+    .order-cta .btn-ghost i {
+      font-size: 24px;
+      color: #3f4150; }
+    .order-cta .btn-ghost span {
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 16px;
+      letter-spacing: -0.01mm;
+      color: #8c8d96; }
+  .order-cta .btn-primary {
+    flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */
