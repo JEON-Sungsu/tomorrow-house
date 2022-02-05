@@ -1,5 +1,6 @@
 .order-cta {
   @include flexbox;
+  background-color: $white;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -14,6 +15,12 @@
     flex-shrink: 0;
     width: 72px;
     margin-right: 4px;
+
+    &.is-active {
+      i {
+        color: $keycolor;
+      }
+    }
 
     i {
       font-size: 24px;
