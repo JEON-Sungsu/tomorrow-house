@@ -2649,8 +2649,7 @@ i {
   width: 100%;
   padding: 0 4px;
   height: 56px;
-  z-index: 40;
-  display: none; }
+  z-index: 40; }
   .order-cta .btn-ghost {
     flex-direction: column;
     flex-grow: 0;
@@ -2798,5 +2797,46 @@ i {
         line-height: 28px;
         letter-spacing: -0.005em;
         height: 55px; } }
+
+.bookmark-toast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding-left: 36px;
+  padding-right: 15px;
+  z-index: 600;
+  background-color: #ffffff;
+  box-shadow: 0 -4px 20px rgba(63, 65, 80, 0.3);
+  width: 100%;
+  height: 56px; }
+  .bookmark-toast .bookmark-title {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    font-weight: 400; }
+  .bookmark-toast .close-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    color: #b2b3b9; }
+    .bookmark-toast .close-button:active {
+      opacity: 0.4; }
+  .bookmark-toast .button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .bookmark-toast .button-group a {
+      margin-right: 4px; }
 
 /*# sourceMappingURL=style.css.map */
