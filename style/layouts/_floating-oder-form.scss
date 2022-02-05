@@ -1,0 +1,49 @@
+.floating-order-form {
+  @include flexbox(start, start);
+  flex-direction: column;
+  height: 700px; //temp
+
+  > * {
+    width: 100%;
+  }
+
+  .order-input,
+  .order-summary,
+  .button-group {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .order-checkout {
+    flex-grow: 1;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .button-group {
+    .bookmark-button {
+      width: 55px;
+      flex-shrink: 0;
+      flex-grow: 0;
+      border-radius: 4px;
+      border: 1px solid $border;
+      transition: background-color 200ms ease-in-out;
+
+      &.is-active {
+        color: $keycolor;
+      }
+
+      i {
+        font-size: 32px;
+        color: $primary;
+      }
+
+      &:hover {
+        background-color: $background;
+      }
+    }
+  }
+}
