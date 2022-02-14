@@ -2471,7 +2471,7 @@ i {
     height: 40px;
     padding: 0 7px;
     border-bottom: 1px solid #e0e2e7; }
-  ㄹ .lnb-item.is-active a {
+  .lnb-item.is-active a {
     border-bottom-color: #3da5f5;
     color: #3da5f5; }
   .lnb-item a {
