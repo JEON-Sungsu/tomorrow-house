@@ -6,7 +6,7 @@ function drawerMenuToggle() {
   drawerMenu.classList.toggle('is-active')
 }
 
-// drawerMenuBtnList[0].addEventListener('click', drawerMenuToggle)
+// drawerMenuBtnList[0].addEventListener('click', drawerMenuToggle) 이렇게도 가능하지만 이것은 원시적인 방법..
 
 drawerMenuBtnList.forEach(function (els) {
   els.addEventListener('click', drawerMenuToggle)
